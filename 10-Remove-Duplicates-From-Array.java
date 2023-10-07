@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 
 class RemoveDuplicates 
@@ -24,26 +23,26 @@ class RemoveDuplicates
 				{
                     			isDuplicate = true;
                     			break;
-                			}
-            			}            			
-            			if (!isDuplicate) 				// If it's not a duplicate, add it to the unique elements
+                		}
+            		}            			
+            		if (!isDuplicate) 				// If it's not a duplicate, add it to the unique elements
 			{
-                			array[newSize] = array[i];
-                			newSize++;
-            			}
-        		}
+                		array[newSize] = array[i];
+                		newSize++;
+            		}
+        	}
 		if (newSize == size)
 		{
 			System.out.println("No duplicates found in the array.");
-}
-        		else
+		}
+        	else
 		{
-        			System.out.println("New length of the array: " + newSize);	// Display the new length and the
-        			System.out.println("Array after removing duplicates:");		//modified array
-        			for (int i = 0; i < newSize; i++) 
+        		System.out.println("New length of the array: " + newSize);	// Display the new length and the
+        		System.out.println("Array after removing duplicates:");		//modified array
+        		for (int i = 0; i < newSize; i++) 
 			{
-            				System.out.print(array[i] + " ");
-        			}
+    				System.out.print(array[i] + " ");
+        		}
 		}
     	}
 }
